@@ -1,6 +1,5 @@
 <script lang="ts">
 	import RecipeCard from './RecipeCard.svelte';
-
 	import { mock_recipes } from '$lib/data/recipes-data';
 	import type { Recipe } from '$lib/data/recipes-schema';
 
