@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { getRecipe, type Recipe } from '$lib/data/recipes-schema';
+	import { type Recipe } from '$lib/data/recipes-schema';
+	import type { Comment } from '$lib/server/db/schema';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 
 	let recipe: Recipe = data.recipe;
-	let comments = data.comments;
+	let comments: Comment[] = data.comments;
 </script>
 
 <a href="/">◀️ Back</a>
